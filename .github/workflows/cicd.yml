@@ -9,9 +9,9 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: Checkout source
-        uses: action/checkout@v3
+      - uses: action/checkout@v3
       - name: Setup Java
-        uses: action/setup-java@v3
+      - uses: action/setup-java@v3
         with:
           distribution: 'openjdk'
           java-varsion: '17'
