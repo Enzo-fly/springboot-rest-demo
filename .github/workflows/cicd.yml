@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 17
-          distribution: openjdk
+          distribution: 'openjdk'
       - name: Build Project
         run: ./gradlew clean build -x test
       - name: Login to docker hub
